@@ -1,22 +1,27 @@
 package dominio;
 
-public class Director {
+public class Director extends Participante{
 
-    private String nombre;
+    public Director(String nombre)
+    {
+        super(nombre);
+    }
+    public Director()
+    {
+        
+    }
 
     public void setNombre(String nombre)
     {
         this.nombre = nombre;
     }
-
     public String getNombre()
     {
         return nombre;
     }
-
     public String toString()
     {
-        return "Director: "+nombre;
+        return "Director: "+ getNombre();
     }
     
 }
